@@ -143,30 +143,30 @@ describe("Iteration 4 | Delete List Items", () => {
 
 describe("Iteration 5 | Add New Food - AddFoodForm component", () => {
   describe("AddFoodForm component", () => {
-    test("renders a form input with attribute 'name=\"name\"'", () => {
+    test("renders a form Input with attribute 'name=\"name\"'", () => {
       const { container } = render(<AddFoodForm />);
-      const nameInput = container.querySelector('input[name="name"]');
+      const nameInput = container.querySelector('Input[name="name"]');
 
       expect(nameInput).not.toBeNull();
     });
 
-    test("renders a form input with attribute 'name=\"image\"'", () => {
+    test("renders a form Input with attribute 'name=\"image\"'", () => {
       const { container } = render(<AddFoodForm />);
-      const imageInput = container.querySelector('input[name="image"]');
+      const imageInput = container.querySelector('Input[name="image"]');
 
       expect(imageInput).not.toBeNull();
     });
 
-    test("renders a form input with attribute 'name=\"calories\"'", () => {
+    test("renders a form Input with attribute 'name=\"calories\"'", () => {
       const { container } = render(<AddFoodForm />);
-      const caloriesInput = container.querySelector('input[name="calories"]');
+      const caloriesInput = container.querySelector('Input[name="calories"]');
 
       expect(caloriesInput).not.toBeNull();
     });
 
-    test("renders a form input with attribute 'name=\"servings\"'", () => {
+    test("renders a form Input with attribute 'name=\"servings\"'", () => {
       const { container } = render(<AddFoodForm />);
-      const servingsInput = container.querySelector('input[name="servings"]');
+      const servingsInput = container.querySelector('Input[name="servings"]');
 
       expect(servingsInput).not.toBeNull();
     });
@@ -187,10 +187,10 @@ describe("Iteration 5 | Add New Food - AddFoodForm component", () => {
 
       const { container } = render(<App />);
       const imageElements = container.getElementsByTagName("img");
-      const nameInput = container.querySelector('input[name="name"]');
-      const imageInput = container.querySelector('input[name="image"]');
-      const caloriesInput = container.querySelector('input[name="calories"]');
-      const servingsInput = container.querySelector('input[name="servings"]');
+      const nameInput = container.querySelector('Input[name="name"]');
+      const imageInput = container.querySelector('Input[name="image"]');
+      const caloriesInput = container.querySelector('Input[name="calories"]');
+      const servingsInput = container.querySelector('Input[name="servings"]');
 
       expect(nameInput).not.toBeNull();
       expect(imageInput).not.toBeNull();
